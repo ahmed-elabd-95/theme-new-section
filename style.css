@@ -1,0 +1,64 @@
+.ind-largeParentDiv {
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ind-firstParentDiv,
+.ind-thirdLastDiv {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.ind-secondMiddleDiv {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.ind-childFirstDiv,
+.ind-childLastDiv {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+}
+.ind-categoryNameImage {
+  position: absolute;
+  margin-left: 50px;
+  color: #fff;
+  font-size: 20px;
+}
+.smallestDivImage {
+  width: 47%;
+}
+@media screen and (max-width: 768px) {
+  .ind-largeParentDiv {
+    flex-direction: column;
+  }
+  .ind-firstParentDiv,
+  .ind-thirdLastDiv {
+    width: 100%;
+  }
+  .ind-childFirstDiv,
+  .ind-childLastDiv {
+    flex-direction: column;
+  }
+  .smallestDivImage {
+    width: 100%;
+  }
+  .ind-secondMiddleDiv {
+    width: 100%;
+  }
+  .ind-secondMiddleDiv div img {
+    width: 100%;
+  }
+  img{
+      padding-bottom: 20px;
+  }
+}
