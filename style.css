@@ -8,8 +8,7 @@
 }
 .ind-firstParentDiv,
 .ind-thirdLastDiv {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 40%;
 }
 .ind-secondMiddleDiv {
@@ -17,13 +16,7 @@
   flex-direction: column;
   width: 20%;
 }
-.ind-childFirstDiv,
-.ind-childLastDiv {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-}
+
 
 img {
   max-width: 100%;
@@ -34,8 +27,15 @@ img {
   color: #fff;
   font-size: 20px;
 }
-.smallestDivImage {
-  width: 47%;
+.smallestDivImageLeft{
+  width: 48%;
+  float: left;
+  padding-bottom: 12px;
+}
+.smallestDivImageRight{
+  width: 48%;
+  float: right;
+  padding-bottom: 12px;
 }
 .grid-container {
   display: grid;
@@ -60,9 +60,7 @@ img {
   .ind-childLastDiv {
     flex-direction: column;
   }
-  .smallestDivImage {
-    width: 100%;
-  }
+  
   .ind-secondMiddleDiv {
     width: 100%;
   }
