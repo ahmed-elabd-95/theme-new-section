@@ -37,6 +37,17 @@ img {
 .smallestDivImage {
   width: 47%;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .ind-largeParentDiv {
     flex-direction: column;
@@ -58,7 +69,7 @@ img {
   .ind-secondMiddleDiv div img {
     width: 100%;
   }
-  img{
-      padding-bottom: 20px;
+  img {
+    padding-bottom: 20px;
   }
 }
